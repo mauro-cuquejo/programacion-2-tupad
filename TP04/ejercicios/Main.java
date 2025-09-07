@@ -52,9 +52,9 @@ public class Main {
         System.out.println(empleado3);
 
         System.out.println("\nProbando getters y setters...");
-        System.out.println(empleado1.getNombre());
-        System.out.println(empleado1.getPuesto());
-        System.out.println(empleado1.getSalario());
+        System.out.println("Nombre: " + empleado1.getNombre());
+        System.out.println("Puesto: " + empleado1.getPuesto());
+        System.out.println("Salario: " + empleado1.getSalario());
 
         empleado1.setNombre("Juan Carlos");
         System.out.println("Nombre: " + empleado1.getNombre());
