@@ -8,7 +8,6 @@ public class Main {
         System.out.println(cancion);
         cancion.setArtista(artista);
         System.out.println(cancion);
-        Reproductor reproductor = new Reproductor();
-        reproductor.reproducir(cancion);
+        Reproductor.reproducir(cancion);
     }
 }
