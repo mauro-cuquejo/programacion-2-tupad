@@ -48,4 +48,12 @@ public class Celular {
     public Usuario getUsuario() {
         return this.usuario;
     }
+
+    public String mostrarCelular() {
+        String bateria = (this.bateria != null) ?
+                "con bateria modelo: " + this.bateria.getModelo() + " y capacidad: " + this.bateria.getCapacidad() + " MA." :
+                "sin bateria";
+
+        return "Celular [imei=" + imei + ", marca=" + marca + ", modelo=" + modelo + ", bateria=" + bateria + "]";
+    }
 }

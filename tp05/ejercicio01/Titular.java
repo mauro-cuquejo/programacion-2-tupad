@@ -33,8 +33,4 @@ public class Titular {
         this.nombre = nombre;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
 }

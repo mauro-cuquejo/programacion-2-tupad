@@ -37,12 +37,4 @@ public class Pasaporte {
         }
     }
 
-    public void setNumero(Long numero) {
-        this.numero = numero;
-    }
-
-    public void setFechaEmision(LocalDateTime fechaEmision) {
-        this.fechaEmision = fechaEmision;
-    }
-
 }

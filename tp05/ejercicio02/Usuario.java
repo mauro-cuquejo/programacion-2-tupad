@@ -32,7 +32,8 @@ public class Usuario {
     public void mostrarCelular() {
         if (this.celular != null) {
             System.out.println("El usuario: " + this.nombre + " tiene el celular: "
-                    + this.celular.getMarca() + " " + this.celular.getModelo());
+                    + this.celular.getMarca() + " " + this.celular.getModelo()
+                    + " con celular: " + this.celular.mostrarCelular());
         } else {
             System.out.println("El usuario: " + this.nombre + " no tiene celular");
         }

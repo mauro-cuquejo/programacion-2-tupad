@@ -17,11 +17,4 @@ public class Foto {
         return formato;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
-
-    public void setFormato(String formato) {
-        this.formato = formato;
-    }
 }

@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
-        Titular titular = new Titular("Juan Perez", "12345678A");
+        Titular titular = new Titular("Jorge Páez", "12345678A");
 
         Pasaporte pasaporte = new Pasaporte(987654321L,
                 LocalDateTime.now(),

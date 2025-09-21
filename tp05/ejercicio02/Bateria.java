@@ -13,15 +13,7 @@ public class Bateria {
         return modelo;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
     public Integer getCapacidad() {
         return capacidad;
-    }
-
-    public void setCapacidad(Integer capacidad) {
-        this.capacidad = capacidad;
     }
 }
