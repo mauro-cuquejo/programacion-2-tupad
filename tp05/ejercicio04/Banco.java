@@ -17,11 +17,4 @@ public class Banco {
         this.nombre = nombre;
     }
 
-    public String getCuit() {
-        return cuit;
-    }
-
-    public void setCuit(String cuit) {
-        this.cuit = cuit;
-    }
 }

@@ -17,14 +17,6 @@ public class Paciente {
         this.nombre = nombre;
     }
 
-    public String getObraSocial() {
-        return obraSocial;
-    }
-
-    public void setObraSocial(String obraSocial) {
-        this.obraSocial = obraSocial;
-    }
-
     @Override
     public String toString() {
         return "Paciente [nombre=" + nombre + ", obraSocial=" + obraSocial + "]";

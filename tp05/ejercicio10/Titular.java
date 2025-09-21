@@ -3,7 +3,7 @@ package tp05.ejercicio10;
 public class Titular {
     private String nombre;
     private Long dni;
-    private CuentaBancaria cuentaBancaria;
+    private CuentaBancaria cuentaBancaria;  // Asociacion bidireccional 1 a 1
 
     public Titular(String nombre, Long dni) {
         this.nombre = nombre;
@@ -16,14 +16,6 @@ public class Titular {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public Long getDni() {
-        return dni;
-    }
-
-    public void setDni(Long dni) {
-        this.dni = dni;
     }
 
     public CuentaBancaria getCuentaBancaria() {

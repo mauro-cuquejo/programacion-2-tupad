@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class Impuesto {
     private BigDecimal monto;
-    private Contribuyente contribuyente;
+    private Contribuyente contribuyente;  // Asociacion unidireccional
 
     public Impuesto(BigDecimal monto) {
         this.monto = monto;
@@ -12,10 +12,6 @@ public class Impuesto {
 
     public BigDecimal getMonto() {
         return monto;
-    }
-
-    public void setMonto(BigDecimal monto) {
-        this.monto = monto;
     }
 
     public Contribuyente getContribuyente() {

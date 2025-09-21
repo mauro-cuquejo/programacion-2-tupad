@@ -2,17 +2,9 @@ package tp05.ejercicio13;
 
 public class CodigoQR {
     private String valor;
-    private Usuario usuario;
+    private Usuario usuario;  // Asociacion unidireccional
 
     public CodigoQR(String valor) {
-        this.valor = valor;
-    }
-
-    public String getValor() {
-        return valor;
-    }
-
-    public void setValor(String valor) {
         this.valor = valor;
     }
 

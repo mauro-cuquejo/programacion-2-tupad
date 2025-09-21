@@ -3,18 +3,14 @@ package tp05.ejercicio05;
 public class Computadora {
     private String marca;
     private String numeroSerie;
-    private PlacaMadre placaMadre;
-    private Propietario propietario;
+    private PlacaMadre placaMadre; // Composición
+    private Propietario propietario;  // Asociacion bidireccional 1 a 1
     private final String MENSAJE = "La computadora %s %s";
 
     public Computadora(String marca, String numeroSerie, String modelo, String chipset) {
         this.marca = marca;
         this.numeroSerie = numeroSerie;
         this.placaMadre = new PlacaMadre(modelo, chipset);
-    }
-
-    public PlacaMadre getPlacaMadre() {
-        return this.placaMadre;
     }
 
     public Propietario getPropietario() {
@@ -32,25 +28,13 @@ public class Computadora {
         return marca;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getNumeroSerie() {
-        return numeroSerie;
-    }
-
-    public void setNumeroSerie(String numeroSerie) {
-        this.numeroSerie = numeroSerie;
-    }
-
     public void mostrarPlacaMadre() {
         if (this.placaMadre == null) {
             System.out.printf(MENSAJE, getModeloComputadora(), "no tiene placa madre\n");
         } else {
             System.out.printf(MENSAJE,
                     getModeloComputadora(),
-                    " tiene la placa madre " + this.placaMadre.getModelo() + "\n");
+                    " tiene la placa madre " + this.placaMadre + "\n");
         }
     }
 
@@ -63,7 +47,7 @@ public class Computadora {
             System.out.printf(MENSAJE, getModeloComputadora(), " no tiene propietario\n");
         } else {
             System.out.printf(MENSAJE,
-                    getModeloComputadora(), " tiene como propietario a " + this.propietario.getNombre() + "\n");
+                    getModeloComputadora(), " tiene como propietario a " + this.propietario + "\n");
         }
     }
 

@@ -5,21 +5,13 @@ public class Celular {
     private String marca;
     private String modelo;
     private Bateria bateria; // agregacion 1 a 1
-    private Usuario usuario;
+    private Usuario usuario;  // Asociacion bidireccional 1 a 1
 
     public Celular(String imei, String marca, String modelo, Bateria bateria) {
         this.imei = imei;
         this.marca = marca;
         this.modelo = modelo;
         this.bateria = bateria;
-    }
-
-    public String getImei() {
-        return imei;
-    }
-
-    public void setImei(String imei) {
-        this.imei = imei;
     }
 
     public String getMarca() {
@@ -32,10 +24,6 @@ public class Celular {
 
     public String getModelo() {
         return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
     }
 
     public void setUsuario(Usuario usuario) {

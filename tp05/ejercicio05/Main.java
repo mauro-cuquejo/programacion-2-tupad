@@ -11,7 +11,6 @@ public class Main {
         computadora.mostrarPropietario();
 
         Propietario propietario = new Propietario("Mauro Curbejo", 2020202020L);
-        computadora.mostrarPropietario();
         propietario.setComputadora(computadora);
         computadora.mostrarPropietario();
         propietario.mostrarComputadora();

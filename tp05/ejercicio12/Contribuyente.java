@@ -17,14 +17,6 @@ public class Contribuyente {
         this.nombre = nombre;
     }
 
-    public String getCuil() {
-        return cuil;
-    }
-
-    public void setCuil(String cuil) {
-        this.cuil = cuil;
-    }
-
     @Override
     public String toString() {
         return "Contribuyente [nombre=" + nombre + ", cuil=" + cuil + "]";

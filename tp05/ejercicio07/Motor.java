@@ -13,16 +13,8 @@ public class Motor {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public Long getNumeroSerie() {
         return numeroSerie;
-    }
-
-    public void setNumeroSerie(Long numeroSerie) {
-        this.numeroSerie = numeroSerie;
     }
 
     @Override

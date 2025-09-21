@@ -3,33 +3,13 @@ package tp05.ejercicio03;
 public class Libro {
     private String titulo;
     private String isbn;
-    private Editorial editorial;
-    private Autor autor;
+    private Editorial editorial; // Agregacion
+    private Autor autor;  // Asociacion unidireccional
 
     public Libro(String titulo, String isbn, Editorial editorial) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.editorial = editorial;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-    public Autor getAutor() {
-        return autor;
     }
 
     public void setAutor(Autor autor) {

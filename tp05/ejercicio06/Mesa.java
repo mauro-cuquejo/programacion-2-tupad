@@ -9,19 +9,9 @@ public class Mesa {
         this.capacidad = capacidad;
     }
 
-    public Integer getNumero() {
-        return numero;
+    @Override
+    public String toString() {
+        return "Mesa [numero=" + numero + ", capacidad=" + capacidad + "]";
     }
 
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
-
-    public Integer getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(Integer capacidad) {
-        this.capacidad = capacidad;
-    }
 }

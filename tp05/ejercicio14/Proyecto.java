@@ -19,14 +19,6 @@ public class Proyecto {
         this.nombre = nombre;
     }
 
-    public LocalTime getDuracionMin() {
-        return duracionMin;
-    }
-
-    public void setDuracionMin(LocalTime duracionMin) {
-        this.duracionMin = duracionMin;
-    }
-
     @Override
     public String toString() {
         return "Proyecto [nombre=" + nombre + ", duracion minutos=" +  getDuracionEnMinutos() + "]";

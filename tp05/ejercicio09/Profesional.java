@@ -17,14 +17,6 @@ public class Profesional {
         this.nombre = nombre;
     }
 
-    public String getEspecialidad() {
-        return especialidad;
-    }
-
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
-    }
-
     @Override
     public String toString() {
         return "Profesional [nombre=" + nombre + ", especialidad=" + especialidad + "]";

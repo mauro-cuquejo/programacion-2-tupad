@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 public class TarjetaDeCredito {
     private Long numero;
     private LocalDateTime fechaVencimiento;
-    private Cliente cliente;
-    private Banco banco;
+    private Cliente cliente;  // Asociacion bidireccional 1 a 1
+    private Banco banco; // Agregación
 
     public TarjetaDeCredito(Long numero, LocalDateTime fechaVencimiento, Banco banco) {
         this.numero = numero;

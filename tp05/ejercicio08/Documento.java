@@ -13,28 +13,8 @@ public class Documento {
         this.firmaDigital = new FirmaDigital(codigoHash, fecha, usuario);
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getContenido() {
-        return contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
-
     public FirmaDigital getFirmaDigital() {
         return firmaDigital;
-    }
-
-    public void setFirmaDigital(FirmaDigital firmaDigital) {
-        this.firmaDigital = firmaDigital;
     }
 
     @Override

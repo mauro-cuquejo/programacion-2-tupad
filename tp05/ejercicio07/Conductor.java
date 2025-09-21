@@ -4,7 +4,7 @@ public class Conductor {
 
     private String nombre;
     private Licencia licencia;
-    private Vehiculo vehiculo;
+    private Vehiculo vehiculo;  // Asociacion bidireccional 1 a 1
 
     public Conductor(String nombre, Licencia licencia) {
         this.nombre = nombre;
@@ -17,14 +17,6 @@ public class Conductor {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public Licencia getLicencia() {
-        return licencia;
-    }
-
-    public void setLicencia(Licencia licencia) {
-        this.licencia = licencia;
     }
 
     public Vehiculo getVehiculo() {

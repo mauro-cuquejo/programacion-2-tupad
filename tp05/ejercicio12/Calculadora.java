@@ -3,6 +3,8 @@ package tp05.ejercicio12;
 import java.math.BigDecimal;
 
 public class Calculadora {
+
+    // Dependencia de uso
     public void calcular(Impuesto impuesto) {
         String contribuyenteNombre = (impuesto.getContribuyente() != null) ? impuesto.getContribuyente().getNombre() : "N/A";
         System.out.println("Calculando impuesto para el contribuyente: " + contribuyenteNombre);

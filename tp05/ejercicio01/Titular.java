@@ -3,7 +3,7 @@ package tp05.ejercicio01;
 public class Titular {
     private String nombre;
     private String dni;
-    private Pasaporte pasaporte; // Asociacion 1 a 1
+    private Pasaporte pasaporte;  // Asociacion bidireccional 1 a 1
 
     public Titular(String nombre, String dni) {
         this.nombre = nombre;

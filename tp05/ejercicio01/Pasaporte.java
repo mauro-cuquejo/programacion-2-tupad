@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Pasaporte {
     private Long numero;
     private LocalDateTime fechaEmision;
-    private Titular titular; // Asociacion 1 a 1
+    private Titular titular; // Asociacion bidireccional 1 a 1
     private Foto foto; // Composicion
 
     public Pasaporte(Long numero, LocalDateTime fechaEmision, String imagen, String formato) {

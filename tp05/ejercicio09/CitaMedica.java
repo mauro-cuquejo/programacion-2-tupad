@@ -14,32 +14,8 @@ public class CitaMedica {
         this.hora = hora;
     }
 
-    public LocalDateTime getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(LocalDateTime fecha) {
-        this.fecha = fecha;
-    }
-
-    public LocalTime getHora() {
-        return hora;
-    }
-
-    public void setHora(LocalTime hora) {
-        this.hora = hora;
-    }
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
-    }
-
-    public Profesional getProfesional() {
-        return profesional;
     }
 
     public void setProfesional(Profesional profesional) {
