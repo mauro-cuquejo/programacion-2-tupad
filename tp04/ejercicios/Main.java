@@ -1,4 +1,4 @@
-package TP04.ejercicios;
+package tp04.ejercicios;
 
 public class Main {
     public static void main(String[] args) {

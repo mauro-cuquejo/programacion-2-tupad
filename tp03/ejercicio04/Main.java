@@ -1,4 +1,4 @@
-package TP03.ejercicio04;
+package tp03.ejercicio04;
 
 public class Main {
 

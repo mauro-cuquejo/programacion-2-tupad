@@ -1,4 +1,4 @@
-package TP04.ejercicios;
+package tp04.ejercicios;
 
 public class Empleado {
     private int id;

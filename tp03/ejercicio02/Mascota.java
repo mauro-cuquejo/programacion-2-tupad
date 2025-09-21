@@ -1,4 +1,4 @@
-package TP03.ejercicio02;
+package tp03.ejercicio02;
 
 public class Mascota {
     private String nombre;
