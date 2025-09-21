@@ -1,7 +1,7 @@
 package tp05.ejercicio14;
 
 public class Render {
-    private String formato;
+    private final String formato;
     private Proyecto proyecto;  // Asociacion unidireccional
 
 

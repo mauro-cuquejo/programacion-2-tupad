@@ -1,20 +1,17 @@
 package tp05.ejercicio04;
 
 public class Banco {
-    private String nombre;
-    private String cuit;
+    private final String nombre;
+    private final String cuit;
 
     public Banco(String nombre, String cuit) {
         this.nombre = nombre;
         this.cuit = cuit;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "Banco [nombre=" + nombre + ", cuit=" + cuit + "]";
     }
 
 }

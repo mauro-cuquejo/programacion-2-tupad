@@ -2,20 +2,17 @@ package tp05.ejercicio03;
 
 public class Editorial {
 
-    private String nombre;
-    private String direccion;
+    private final String nombre;
+    private final String direccion;
 
     public Editorial(String nombre, String direccion) {
         this.nombre = nombre;
         this.direccion = direccion;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "nombre: " + this.nombre + ", direccion: " + this.direccion;
     }
 
 }

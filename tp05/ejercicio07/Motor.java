@@ -1,8 +1,8 @@
 package tp05.ejercicio07;
 
 public class Motor {
-    private String tipo;
-    private Long numeroSerie;
+    private final String tipo;
+    private final Long numeroSerie;
 
     public Motor(String tipo, Long numeroSerie) {
         this.tipo = tipo;

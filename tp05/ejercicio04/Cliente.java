@@ -1,21 +1,13 @@
 package tp05.ejercicio04;
 
 public class Cliente {
-    private String nombre;
-    private Long dni;
+    private final String nombre;
+    private final Long dni;
     private TarjetaDeCredito tarjetaDeCredito;  // Asociacion bidireccional 1 a 1
 
     public Cliente(String nombre, Long dni) {
         this.nombre = nombre;
         this.dni = dni;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public TarjetaDeCredito getTarjetaDeCredito() {
@@ -33,7 +25,7 @@ public class Cliente {
         if (this.tarjetaDeCredito == null) {
             System.out.println("Cliente no tiene Tarjeta asociada");
         } else {
-            System.out.println("Tarjeta asociada a Cliente" + this + ": " + this.tarjetaDeCredito.getNumero());
+            System.out.println("Tarjeta asociada a Cliente: " + this + ": " + this.tarjetaDeCredito);
         }
     }
 

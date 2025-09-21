@@ -3,9 +3,9 @@ package tp05.ejercicio08;
 import java.time.LocalDateTime;
 
 public class Documento {
-    private String titulo;
-    private String contenido;
-    private FirmaDigital firmaDigital; //composicion
+    private final String titulo;
+    private final String contenido;
+    private final FirmaDigital firmaDigital; //composicion
 
     public Documento(String titulo, String contenido, String codigoHash, LocalDateTime fecha, Usuario usuario) {
         this.titulo = titulo;

@@ -1,8 +1,8 @@
 package tp05.ejercicio06;
 
 public class Mesa {
-    private Integer numero;
-    private Integer capacidad;
+    private final Integer numero;
+    private final Integer capacidad;
 
     public Mesa(Integer numero, Integer capacidad) {
         this.numero = numero;

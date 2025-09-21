@@ -1,10 +1,10 @@
 package tp05.ejercicio02;
 
 public class Celular {
-    private String imei;
-    private String marca;
-    private String modelo;
-    private Bateria bateria; // agregacion 1 a 1
+    private final String imei;
+    private final String marca;
+    private final String modelo;
+    private final Bateria bateria; // agregacion 1 a 1
     private Usuario usuario;  // Asociacion bidireccional 1 a 1
 
     public Celular(String imei, String marca, String modelo, Bateria bateria) {
@@ -16,10 +16,6 @@ public class Celular {
 
     public String getMarca() {
         return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public String getModelo() {

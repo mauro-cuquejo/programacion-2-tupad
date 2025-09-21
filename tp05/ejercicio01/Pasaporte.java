@@ -3,10 +3,10 @@ package tp05.ejercicio01;
 import java.time.LocalDateTime;
 
 public class Pasaporte {
-    private Long numero;
-    private LocalDateTime fechaEmision;
+    private final Long numero;
+    private final LocalDateTime fechaEmision;
+    private final Foto foto; // Composicion
     private Titular titular; // Asociacion bidireccional 1 a 1
-    private Foto foto; // Composicion
 
     public Pasaporte(Long numero, LocalDateTime fechaEmision, String imagen, String formato) {
         this.numero = numero;

@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class CuentaBancaria {
-    private String cbu;
-    private BigDecimal saldo; //prefiero usar BigDecimal para importes, por el problema de precisión de los double.
-    private ClaveSeguridad claveSeguridad; // Composicion
+    private final String cbu;
+    private final BigDecimal saldo; //prefiero usar BigDecimal para importes, por el problema de precisión de los double.
+    private final ClaveSeguridad claveSeguridad; // Composicion
     private Titular titular;  // Asociacion bidireccional 1 a 1
 
     public CuentaBancaria(String cbu, BigDecimal saldo, String codigo, LocalDateTime ultimaModificacion) {

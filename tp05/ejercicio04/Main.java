@@ -9,7 +9,7 @@ public class Main {
                 LocalDateTime.of(2030, 9, 20,0,0),
                 banco);
 
-        System.out.println("Tarjeta: " + tarjetaDeCredito.getNumero());
+        System.out.println("Tarjeta: " + tarjetaDeCredito);
         tarjetaDeCredito.mostrarCliente();
         tarjetaDeCredito.mostrarBanco();
 

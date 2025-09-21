@@ -4,10 +4,10 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class Reserva {
-    private LocalDateTime fecha;
-    private LocalTime hora;
+    private final LocalDateTime fecha;
+    private final LocalTime hora;
+    private final Mesa mesa; // Agregacion
     private Cliente cliente;  // Asociacion unidireccional 1 a 1
-    private Mesa mesa; // Agregacion
 
     public Reserva(LocalDateTime fecha, LocalTime hora, Mesa mesa) {
         this.fecha = fecha;

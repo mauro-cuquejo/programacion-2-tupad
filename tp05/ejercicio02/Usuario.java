@@ -1,8 +1,8 @@
 package tp05.ejercicio02;
 
 public class Usuario {
-    private String nombre;
-    private Integer dni;
+    private final String nombre;
+    private final Integer dni;
     private Celular celular;  // Asociacion bidireccional 1 a 1
 
     public Usuario(String nombre, Integer dni) {

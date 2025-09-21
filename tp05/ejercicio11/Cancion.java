@@ -1,7 +1,7 @@
 package tp05.ejercicio11;
 
 public class Cancion {
-    private String titulo;
+    private final String titulo;
     private Artista artista;  // Asociacion unidireccional
 
     public Cancion(String titulo) {

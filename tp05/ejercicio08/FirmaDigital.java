@@ -3,21 +3,13 @@ package tp05.ejercicio08;
 import java.time.LocalDateTime;
 
 public class FirmaDigital {
-    private String codigoHash;
-    private LocalDateTime fecha;
-    private Usuario usuario; // Agregación
+    private final String codigoHash;
+    private final LocalDateTime fecha;
+    private final Usuario usuario; // Agregación
 
     public FirmaDigital(String codigoHash, LocalDateTime fecha, Usuario usuario) {
         this.codigoHash = codigoHash;
         this.fecha = fecha;
-        this.usuario = usuario;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
 

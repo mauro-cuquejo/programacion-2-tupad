@@ -1,20 +1,16 @@
 package tp05.ejercicio03;
 
 public class Autor {
-    private String nombre;
-    private String nacionalidad;
+    private final String nombre;
+    private final String nacionalidad;
 
     public Autor(String nombre, String nacionalidad) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
     }
 
-    public String getNombre() {
-        return nombre;
+    @Override
+    public String toString() {
+        return "nombre: " + this.nombre + ", nacionalidad: " + this.nacionalidad;
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
 }

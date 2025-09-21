@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class CitaMedica {
-    private LocalDateTime fecha;
-    private LocalTime hora;
+    private final LocalDateTime fecha;
+    private final LocalTime hora;
     private Paciente paciente; //asociacion unidireccional
     private Profesional profesional; //asociacion unidireccional
 

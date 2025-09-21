@@ -1,7 +1,7 @@
 package tp05.ejercicio13;
 
 public class CodigoQR {
-    private String valor;
+    private final String valor;
     private Usuario usuario;  // Asociacion unidireccional
 
     public CodigoQR(String valor) {

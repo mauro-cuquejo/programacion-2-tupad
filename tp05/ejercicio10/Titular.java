@@ -1,21 +1,13 @@
 package tp05.ejercicio10;
 
 public class Titular {
-    private String nombre;
-    private Long dni;
+    private final String nombre;
+    private final Long dni;
     private CuentaBancaria cuentaBancaria;  // Asociacion bidireccional 1 a 1
 
     public Titular(String nombre, Long dni) {
         this.nombre = nombre;
         this.dni = dni;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public CuentaBancaria getCuentaBancaria() {

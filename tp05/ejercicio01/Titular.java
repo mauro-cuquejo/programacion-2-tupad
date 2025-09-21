@@ -1,8 +1,8 @@
 package tp05.ejercicio01;
 
 public class Titular {
-    private String nombre;
-    private String dni;
+    private final String nombre;
+    private final String dni;
     private Pasaporte pasaporte;  // Asociacion bidireccional 1 a 1
 
     public Titular(String nombre, String dni) {
@@ -27,10 +27,6 @@ public class Titular {
         if (pasaporte != null && pasaporte.getTitular() != this) {
             pasaporte.setTitular(this);
         }
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
 }

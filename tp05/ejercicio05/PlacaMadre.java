@@ -1,12 +1,8 @@
 package tp05.ejercicio05;
 
 public class PlacaMadre {
-    private String modelo;
-    private String chipset;
-
-    public String getModelo() {
-        return modelo;
-    }
+    private final String modelo;
+    private final String chipset;
 
     public PlacaMadre(String modelo, String chipset) {
         this.modelo = modelo;

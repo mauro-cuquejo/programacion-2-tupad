@@ -1,8 +1,8 @@
 package tp05.ejercicio01;
 
 public class Foto {
-    private String imagen;
-    private String formato;
+    private final String imagen;
+    private final String formato;
 
     public Foto(String imagen, String formato) {
         this.imagen = imagen;

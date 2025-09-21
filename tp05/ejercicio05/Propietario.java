@@ -1,8 +1,8 @@
 package tp05.ejercicio05;
 
 public class Propietario {
-    private String nombre;
-    private Long dni;
+    private final String nombre;
+    private final Long dni;
     private Computadora computadora;  // Asociacion bidireccional 1 a 1
 
     public Propietario(String nombre, Long dni) {
@@ -27,14 +27,6 @@ public class Propietario {
         } else {
             System.out.println("El propietario " + this + " tiene una computadora " + this.computadora.getMarca());
         }
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     @Override

@@ -1,9 +1,9 @@
 package tp05.ejercicio07;
 
 public class Vehiculo {
-    private String patente;
-    private String modelo;
-    private Motor motor; // Agregación
+    private final String patente;
+    private final String modelo;
+    private final Motor motor; // Agregación
     private Conductor conductor;  // Asociacion bidireccional 1 a 1
 
     public Vehiculo(String patente, String modelo, Motor motor) {

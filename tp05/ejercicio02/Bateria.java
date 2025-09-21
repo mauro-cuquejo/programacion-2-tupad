@@ -1,8 +1,8 @@
 package tp05.ejercicio02;
 
 public class Bateria {
-    private String modelo;
-    private Integer capacidad;
+    private final String modelo;
+    private final Integer capacidad;
 
     public Bateria(String modelo, Integer capacidad) {
         this.modelo = modelo;

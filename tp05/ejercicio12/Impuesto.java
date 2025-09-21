@@ -3,7 +3,7 @@ package tp05.ejercicio12;
 import java.math.BigDecimal;
 
 public class Impuesto {
-    private BigDecimal monto;
+    private final BigDecimal monto;
     private Contribuyente contribuyente;  // Asociacion unidireccional
 
     public Impuesto(BigDecimal monto) {
@@ -24,7 +24,7 @@ public class Impuesto {
 
     @Override
     public String toString() {
-        String contribuyenteNombre = (contribuyente != null) ? contribuyente.getNombre() : "N/A";
+        String contribuyenteNombre = (contribuyente != null) ? contribuyente.toString() : "N/A";
         return "Impuesto [monto=" + monto + ", contribuyente=" + contribuyenteNombre + "]";
     }
 }

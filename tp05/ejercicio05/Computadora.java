@@ -1,11 +1,12 @@
 package tp05.ejercicio05;
 
 public class Computadora {
-    private String marca;
-    private String numeroSerie;
-    private PlacaMadre placaMadre; // Composición
+    private final String marca;
+    private final String numeroSerie;
+    private final PlacaMadre placaMadre; // Composición
     private Propietario propietario;  // Asociacion bidireccional 1 a 1
-    private final String MENSAJE = "La computadora %s %s";
+
+    private static final String MENSAJE = "La computadora %s %s";
 
     public Computadora(String marca, String numeroSerie, String modelo, String chipset) {
         this.marca = marca;
@@ -29,13 +30,9 @@ public class Computadora {
     }
 
     public void mostrarPlacaMadre() {
-        if (this.placaMadre == null) {
-            System.out.printf(MENSAJE, getModeloComputadora(), "no tiene placa madre\n");
-        } else {
-            System.out.printf(MENSAJE,
-                    getModeloComputadora(),
-                    " tiene la placa madre " + this.placaMadre + "\n");
-        }
+        System.out.printf(MENSAJE,
+                getModeloComputadora(),
+                " tiene la placa madre " + this.placaMadre + "\n");
     }
 
     private String getModeloComputadora() {
