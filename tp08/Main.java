@@ -7,11 +7,17 @@ import tp08.parte01.ecommerce.Estados;
 import tp08.parte01.ecommerce.mediosdepago.MedioDePago;
 import tp08.parte01.ecommerce.mediosdepago.PayPal;
 import tp08.parte01.ecommerce.mediosdepago.TarjetaCredito;
+import tp08.parte02.cadenanumero.ConversorCadena;
+import tp08.parte02.divisionsegura.DivisionSegura;
+import tp08.parte02.excepcionpersonalizada.ValidadorEdad;
+import tp08.parte02.lecturaarchivo.LecturaArchivo;
+import tp08.parte02.trywithresources.LecturaArchivoWithResources;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("TP08");
         ejercicio01();
+        ejercicio02();
     }
 
     public static void ejercicio01() {
@@ -92,5 +98,37 @@ public class Main {
         // Se envía el segundo pedido
         System.out.println("\nSe envía el segundo pedido");
         pedido2.enviarPedido();
+    }
+
+    public static void ejercicio02() {
+        System.out.println("\nEjercicio 2.1 - División Segura");
+        System.out.println("división válida");
+        System.out.println(DivisionSegura.dividir(10, 2));
+        System.out.println("\ndivisión por cero");
+        System.out.println(DivisionSegura.dividir(10, 0));
+
+        System.out.println("\nEjercicio 2.2 - Conversor de Cadena a Número");
+        System.out.println("cadena válida");
+        System.out.println(ConversorCadena.convertirANumero("123"));
+        System.out.println("\ncadena inválida");
+        System.out.println(ConversorCadena.convertirANumero("abc"));
+
+        System.out.println("\nEjercicio 2.3 - Lectura de Archivo");
+        System.out.println("lectura de archivo existente");
+        LecturaArchivo.leerArchivo("tp08\\parte02\\lecturaarchivo\\archivo.txt");
+        System.out.println("\nlectura de archivo inexistente");
+        LecturaArchivo.leerArchivo("archivo_inexistente.txt");
+
+        System.out.println("\nEjercicio 2.4 - Validación de Edad con Excepción Personalizada");
+        System.out.println("edad válida");
+        ValidadorEdad.validarEdad(25);
+        System.out.println("\nedad inválida");
+        ValidadorEdad.validarEdad(-5);
+
+        System.out.println("\nEjercicio 2.5 - Lectura de Archivo con Try-With-Resources");
+        System.out.println("lectura de archivo existente");
+        LecturaArchivoWithResources.leerArchivo("tp08\\parte02\\trywithresources\\archivo.txt");
+        System.out.println("\nlectura de archivo inexistente");
+        LecturaArchivoWithResources.leerArchivo("archivo_inexistente.txt");
     }
 }
